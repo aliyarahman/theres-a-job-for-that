@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-#!venv/bin/python
+#!flask/bin/python
 
 from app import app
-app.run(debug = True)
+app.run(debug=True)
