@@ -1,2 +1,2 @@
-#!venv/bin/python
+#!flask/bin/python
 from app import app

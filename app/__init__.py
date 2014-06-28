@@ -1,3 +1,4 @@
+import os
 from flask import Flask				# Get some basic Flask tools
 from flask.ext.sqlalchemy import SQLAlchemy	# Get the database ORM tools for connecting Flask models to SQL tables
 
