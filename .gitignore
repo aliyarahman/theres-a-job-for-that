@@ -1,0 +1,3 @@
+app_code/venv
+app_code/config.py
+*.pyc
