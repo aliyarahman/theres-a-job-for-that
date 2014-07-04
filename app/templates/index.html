@@ -9,9 +9,9 @@
 
 <p> Ready to find a job that's right for you? Pick a section to start telling us about yourself.</p>
 <br><br>
-<div class="section_button">I can...</div>
-<div class="section_button">I want...</div>
-<div class="section_button">I need...</div>
+<a href="{{ url_for('i_can') }}"><div class="section_button">I can...</div></a>
+<a href="{{ url_for('i_want') }}"><div class="section_button">I want...</div></a>
+<a href="{{ url_for('i_need') }}"><div class="section_button">I need...</div></a>
 
 
 {% endblock %}	
