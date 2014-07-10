@@ -9,6 +9,10 @@ from flask import render_template 	# So that we can render html files in our app
 def index():
 	return render_template('index.html')
 
+# Question screen views follow - once we get a database connection we can probably collapse these into one view
+# and query be category on the homepage button click (e.g. they click "I Can" and it passes "can" as category
+# into db query
+
 @app.route('/i_can')
 def i_can():
 	can_questions = ['I can drive a car', 'I can speak Spanish', 'I can fix a carburetor', 'I can plant a tree']
@@ -27,6 +31,10 @@ def i_need():
         need_question = random.choice(need_questions)
         return render_template('need_question.html', question=need_question)
 
+# Displays calculated list of jobs (after algorithm)
+@app.route('/myjobs')
+def myjobs():
+	return render_template('myjobs.html')
 
 
 @app.route('/jobView/<id>')

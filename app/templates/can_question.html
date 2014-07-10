@@ -1,13 +1,12 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<div class="header">
-	<h1>There's a Job for That.</h1>
 
-	<p>A tool to guide job seekers, in plain language, to the jobs or careers that match their skills, goals, and needs.</p>
+
+<div class="question_block">
+<span class="left_swipe"><a href="{{ url_for('i_can') }}"> &#60 Swipe left for no.</a></span><span class="question_text">{{question}}</span><span class="right_swipe"> <a href="{{ url_for('i_can') }}">Swipe right for yes. &#62</a>
+</span>
 </div>
-
-<div class="question_block"><span class="left_swipe"><a href="{{ url_for('i_can') }}"> &#60 Swipe left for no.</a></span><span class="question_text">{{question}}</span><span class="right_swipe"> <a href="{{ url_for('i_can') }}">Swipe right for yes. &#62</a></span></div>
 
 
 {% endblock %}	
