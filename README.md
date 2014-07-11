@@ -12,8 +12,9 @@ This repository holds
 1. Original ideation materials: from the June 25th, 2014, White House session on 21st Century Jobs
 2. User stories
 3. Wireframes
-4. Data memos: Documenting usage of existing APIs and datasets, as well as needs for data sharing
-5. Skeleton Python/Flask app code: for simple use in demonstrating the click-through/swipe-through.
+4. Data memos: Documenting usage of datasets and algorithms, as well as needs for data sharing
+5. API documentation: sources, intended calls
+6. Skeleton Python/Flask app code: for simple use in demonstrating the click-through/swipe-through.
 
 
 
