@@ -12,6 +12,10 @@ URL: http://api.us.jobs
 Relevant calls:	Keyword search for open job postings. Filterable by geography.
 
 
+mySkillsmyFuture API
+--------------------
+Relevant calls: Keyword search for occupation returns training options for related professions filterable by geography
+
 
 Glass Door API
 --------------
