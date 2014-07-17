@@ -1,15 +1,27 @@
 There's a Job for That
 ======================
 
-A tool to guide job seekers, in plain language, to the jobs or careers that match their skills, goals, and needs.
+A tool to guide job seekers, in plain language, to the jobs or careers that match their skills, goals, and needs. We see this as a supplementary tool that could be embedded on a larger job-seeking site.
 
 Ideated at the White House Data Jam on 21st Century Jobs.
 
 Synopsis (DRAFT):
 
-    We're trying to improve the user experience from the job seekers perspective when searching / using job boards, especially those that are unemployed and going through the process of applying with little to no professional experience to speak of. Examples might include: returning veterans / military; people with skills in crafts / tradesmen that do not know how to explain their abilities in a manner that is transferrable (in a situation where the trade / skill is no longer marketable); people that possess strong soft skills (personable, customer service oriented, etc.); etc.
 
-    We identified this type of 'naive resume jargon' persona as a key to helping match appropriate skills with appropriate jobs. People who don't know how to explain their skills / abilities. We also discussed how we might cater to this persona through a better / more guided user experience when filling out a job / unemployment application. We are considering developing a schema / metadata model (or algorithm) that makes such matches easier / more accurate than what's currently out there (lots of erroneous matches).
+This app will help job seekers find jobs or careers that match their skills, goals, and needs. We are especially focused on people who are unemployed or are looking for a new job. Our focus on searching for low- to middle-skilled jobs -- occupations that often require an associates degree or industry certificate. The challenge is that the language that job-seekers use often does not match well to the language of the career databases (or the language in job ads). 
+
+Examples include: returning veterans looking to make use of skills learned in the military, people who do not know how ot explain their skills well or do not know what sorts of jobs might match, people looking to change jobs (for example, looking for ideas of what industries might have appropriate jobs for them, and people with strong soft skills (personable, customer service oriented, etc.).
+
+This app will help people match their own explanations of their skills to those jobs, and (indirectly) teach them some of the jobs-related "resume jargon" they might use to write their own resume, fill out a job application, or use in an interview. 
+
+Data analysis issues
+We are considering developing a schema / metadata model (or algorithm) that makes such matches easier / more accurate than what's currently out there (lots of erroneous matches).
+
+Extensions of the idea:
+This work could also lead to:
+1. A tool to help employers write job descriptions more accurately and in a way that helps them tap into the broadest appropriate pool of aplicants. 
+2. Support for a resume-writing applications
+
 
 
 
