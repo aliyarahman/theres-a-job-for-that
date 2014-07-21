@@ -13,9 +13,9 @@ a		{text-decoration: none; color: #333333;}
 
 
 /*Login screen*/
-.login_box	{margin-top: 50px; background-color: #0064A4; padding: 1em 1em 1em 1em; width: 22em;}
-.login_box input[type="text"]	{color: #686868; display:block; font-size: 2em; margin-top: 20px; padding: 5px; width: 10em;}
-input[type="submit"] {color: #686868; display:block; font-size: 2em; margin-top: 20px; padding: 5px; font-size: 1.5em;}
+.login_box	{margin-top: 50px; background-color: #0064A4; padding: 1em 1em 1em 1em; width: 22em; margin-left: auto; margin-right: auto;}
+.login_box input[type="text"],.login_box input[type="password"]	{color: #686868; display:block; font-size: 2em; margin-top: 20px; width: 10em; margin-left: auto; margin-right: auto; padding: 5px;}
+.login_box input[type="submit"] {color: #686868; display:block; font-size: 2em; margin-top: 20px; padding: 5px; font-size: 1.5em; margin-left: auto; margin-right: auto;}
 
 
 /*Index view*/
