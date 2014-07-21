@@ -45,10 +45,14 @@ def skills():
 # Displays calculated list of jobs (after algorithm)
 @app.route('/myjobs')
 def myjobs():
-	jobs = [{'title':'Tool and die maker'}, {'title':'Home care pro'}, {'title':'Park ranger'}, {'title':'Underwater welder'}, {'title':'Greenhouse manager'},{'title':'Automobile mechanic'},{'title':'Roofer'},{'title':'Admin assistant'},{'title':'Forklift operator'}] 
+	jobs = [{'id':1, 'title':'Tool and die maker'}, {'id':2,'title':'Home care pro'}, {'id':3,'title':'Park ranger'}, {'id':4,'title':'Underwater welder'}, {'id':5,'title':'Greenhouse manager'},{'id':6,'title':'Automobile mechanic'},{'id':7,'title':'Roofer'},{'id':8,'title':'Admin assistant'},{'id':9,'title':'Forklift operator'}] 
 	return render_template('myjobs.html', jobs=jobs)
 
 
-@app.route('/jobView')
-def jobView():
-	return render_template('jobView.html')#, job=job)
+@app.route('/jobView/<id>')
+def jobView(id):
+	jobs = [{'id':1, 'title':'Tool and die maker'}, {'id':2,'title':'Home care pro'}, {'id':3,'title':'Park ranger'}, {'id':4,'title':'Underwater welder'}, {'id':5,'title':'Greenhouse manager'},{'id':6,'title':'Automobile mechanic'},{'id':7,'title':'Roofer'},{'id':8,'title':'Admin assistant'},{'id':9,'title':'Forklift operator'}] 
+	for j in jobs:
+		if j['id']==int(id):
+			job=j
+	return render_template('jobView.html', job=job)

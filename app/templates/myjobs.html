@@ -4,7 +4,7 @@
 <br><br><br><br><br><div class="jobsholder">
 <h2> Explore your list.</h2>
 {% for job in jobs %}
-	<div class="job_thumb" onClick="location.href='{{ url_for('jobView') }}'"><span class="star">&#9734</span>{{job.title}}</div>
+	<div class="job_thumb" onClick="location.href='{{ url_for('jobView', id=job.id) }}'"><span class="star">&#9734</span>{{job.title}}</div>
 {% endfor %}
 </div>
 
