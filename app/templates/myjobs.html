@@ -2,15 +2,13 @@
 {% block content %}
 
 <br><br><br><br><br><div class="jobsholder">
-
-	<div class="job_box"><span class="star">&#9733</span>Tool and die maker </div>
-	<div class="job_box"><span class="star">&#9734</span>Home care pro</div>
-	<div class="job_box"><span class="star">&#9734</span>Park ranger</div>
-	<div class="job_box"><span class="star">&#9734</span>Underwater welder</div>
-	<div class="job_box"><span class="star">&#9734</span>Greenhouse manager</div>
-	<div class="job_box"><span class="star">&#9733</span>Automobile mechanic</div>
-
+<h2> Explore your list.</h2>
+	<div class="job_thumb" onClick="location.href='{{ url_for('jobView') }}'"><span class="star">&#9733</span>Tool and die maker </div>
+	<div class="job_thumb" onClick="location.href='{{ url_for('jobView') }}'"><span class="star">&#9734</span>Home care pro</div>
+	<div class="job_thumb" onClick="location.href='{{ url_for('jobView') }}'"><span class="star">&#9734</span>Park ranger</div>
+	<div class="job_thumb" onClick="location.href='{{ url_for('jobView') }}'"><span class="star">&#9734</span>Underwater welder</div>
+	<div class="job_thumb" onClick="location.href='{{ url_for('jobView') }}'"><span class="star">&#9734</span>Greenhouse manager</div>
+	<div class="job_thumb" onClick="location.href='{{ url_for('jobView') }}'"><span class="star">&#9733</span>Automobile mechanic</div>
 </div>
-
 
 {% endblock %}	

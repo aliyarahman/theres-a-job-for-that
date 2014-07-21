@@ -41,7 +41,6 @@ def myjobs():
 	return render_template('myjobs.html')
 
 
-@app.route('/jobView/<id>')
-def jobView(id):
-	job = models.Job.query.get(id)
-	return render_template('jobView.html', job=job)
+@app.route('/jobView')
+def jobView():
+	return render_template('jobView.html')#, job=job)
