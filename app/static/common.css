@@ -38,3 +38,7 @@ input[type="submit"] {color: #686868; display:block; font-size: 2em; margin-top:
 
 
 .job_box	{display: inline-block; width: 25em; margin-left: auto; margin-right: auto; height: 25em; background-color: white; color: #0064A4; outline: solid 0.2em #0064A4; font-size: 18px; padding: 10px;}
+
+.next_button {background-color: white;color: #0064A4; border: solid 0.2em #0064A4; padding: 0.2em; width: 15em; margin: auto;}
+
+.next_button:hover	{color: white; background-color: #0064A4; }

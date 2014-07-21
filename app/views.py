@@ -35,6 +35,13 @@ def i_need():
         need_question = random.choice(need_questions)
         return render_template('need_question.html', question=need_question)
 
+
+# Notification of skill language generated
+@app.route('/skills')
+def skills():
+	return render_template('skills.html')
+
+
 # Displays calculated list of jobs (after algorithm)
 @app.route('/myjobs')
 def myjobs():
