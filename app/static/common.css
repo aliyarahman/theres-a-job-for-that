@@ -1,5 +1,5 @@
 h1		{font-family: Arial, Helvetica, sans-serif; color: #333333;}
-
+h2		{color: #0064A4;}
 body		{font-family: Arial,Helvetica,sans-serif; color: #333333;}
 
 a		{text-decoration: none; color: #333333}
@@ -23,3 +23,9 @@ input[type="submit"] {color: #686868; display:block; font-size: 2em; margin-top:
 .question_block	{width: 70%; margin-left: auto; margin-right: auto; margin-top: 15%}
 .swipe_left, .swipe_right	{width: 30%;}
 
+.testing_box	{outline: dashed 4px #0064A4; font-size: 1.5em; color: #0064A4; width: 8em; position: fixed; right: 10em; bottom: 5em; padding: 0.2em; background-color: white; border: none;}
+.testing_box:hover	{ background-color: gray};
+
+.jobsholder	{ width: 60%; height: 60%; margin: auto;}
+.job_box	{ display: inline-block; width: 10em; height: 10em; background-color: white; color: #0064A4; outline: solid 0.2em #0064A4; margin: 1em; font-size: 18px; padding: 10px;}
+.star		{font-size: 36px; display: block; text-align: right;}
