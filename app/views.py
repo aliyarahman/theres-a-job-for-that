@@ -45,7 +45,8 @@ def skills():
 # Displays calculated list of jobs (after algorithm)
 @app.route('/myjobs')
 def myjobs():
-	return render_template('myjobs.html')
+	jobs = [{'title':'Tool and die maker'}, {'title':'Home care pro'}, {'title':'Park ranger'}, {'title':'Underwater welder'}, {'title':'Greenhouse manager'},{'title':'Automobile mechanic'},{'title':'Roofer'},{'title':'Admin assistant'},{'title':'Forklift operator'}] 
+	return render_template('myjobs.html', jobs=jobs)
 
 
 @app.route('/jobView')
