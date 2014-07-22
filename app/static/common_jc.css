@@ -2,12 +2,12 @@ body		{background-color: black;}
 .content 	{width: 320px; height: 480px;
 			margin: auto; margin-top: 10%;
 			padding: 0em;
-			background: url('landing_back.png');
+			background-image: radial-gradient(circle farthest-side at right bottom, #FFFFFF 0%, #0064A4 100%);
 			font-family: Arial;
 			font-weight: bold;
 			color: #333333;
-
 			}
+
 
 .header				{text-align: center;
 					padding-top: 0.5em;
