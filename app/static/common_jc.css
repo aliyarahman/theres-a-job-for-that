@@ -2,10 +2,11 @@ body		{background-color: black;}
 .content 	{width: 320px; height: 480px;
 			margin: auto; margin-top: 10%;
 			padding: 0em;
-			background-color: #9D8A6C;
+			background: url('landing_back.png');
 			font-family: Arial;
 			font-weight: bold;
 			color: #333333;
+
 			}
 
 .header				{text-align: center;
@@ -23,25 +24,25 @@ input[type="text"]	{background-color: #EEEEEE;
 					margin-bottom: 1.5em;
 					width: 75%;}
 
-#signup_button		{background-color: #333333;
-					padding: 1em;
+#signup_button		{padding: 1em;
 					display: inline-block;
 					border: none;
-					color: white;
 					font-weight: bold;
 					width: 5em;}
+#signup_button:hover	{background-color: #333333; color: white;}
 
 #login_button		{padding: 1em;
 					display: inline-block;
 					border: none;
 					font-weight: bold;
 					width: 5em;}
+#login_button:hover	{background-color: #333333; color: white;}
 
 .lower_third		{width: 85%;
 					margin-left: auto;
 					margin-right: auto;
 					border-top: 0.09em white solid;
-					margin-top: 6em;
+					margin-top: 4em;
 					padding-top: 0.25em;}
 #connect			{font-size: 0.75em;}
 
