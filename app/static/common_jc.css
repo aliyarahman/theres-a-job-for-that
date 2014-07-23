@@ -66,12 +66,19 @@ input[type="text"]	{background-color: #EEEEEE;
 
 /* Single question view */
 .question_div	{height: 480px; margin-top:1.75em;}
-.question_header	{ color: white}
-.question_box	{background-color: white; margin-left: 15%; margin-right: 15%; height: 70%;}
-.question_text 	{color: black; padding-left: 2em; padding-right: 2em;}
+.question_header { color: white}
+.question_box	{background-color: white; margin-left: 15%; margin-right: 15%; height: 70%; display: inline-block;}
+.question_text 	{color: black; padding-left: 2em; padding-right: 2em; vertical-align: middle;}
+
 #home			{height: 3em; margin: 0.75em; margin-right: 4em; vertical-align: middle;}
 .progress_count	{opacity: 0.5; display: inline-block;}
 .skip_bar		{color: white; text-align: center; margin-top: 2em;}
+.left_swipe, .right_swipe	{height: 4em; width: 4em; border-radius: 50%;
+							color: white; background-color: black; opacity: 0.6;
+							font-size: 0.8em; font-weight: normal;
+							padding: 2em; text-align: center; position: relative;}
+.left_swipe		{float: left; left: -3.5em; top: 10em;}
+.right_swipe	{float: right; right: -3.5em; top: 10em;}
 
 /* Question categories */
 .orange_can {background-color: #FD8602;}
