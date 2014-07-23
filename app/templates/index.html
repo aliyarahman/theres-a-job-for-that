@@ -7,7 +7,7 @@
 </div>
 
 <div class="category_menu">
-	<div class="question_cat_button" onClick="location.href='{{ url_for('i_can') }}'">
+	<div class="question_cat_button" onClick="location.href='{{ url_for('i_can', can_counter=-1) }}'">
 		<div class="question_cat_number">1</div>
 		<div class="question_cat_text">
 			<div class="question_cat_head">I Can...</div>
@@ -16,7 +16,7 @@
 	</div>
 
 
-	<div class="question_cat_button" onClick="location.href='{{ url_for('i_want') }}'">
+	<div class="question_cat_button" onClick="location.href='{{ url_for('i_want', want_counter=-1) }}'">
 		<div class="question_cat_number">2</div>
 		<div class="question_cat_text">
 			<div class="question_cat_head">I Want...</div>
@@ -25,7 +25,7 @@
 	</div>
 
 
-	<div class="question_cat_button" onClick="location.href='{{ url_for('i_need') }}'">
+	<div class="question_cat_button" onClick="location.href='{{ url_for('i_need', need_counter=-1) }}'">
 		<div class="question_cat_number">3</div>
 		<div class="question_cat_text">
 			<div class="question_cat_head">I Need...</div>

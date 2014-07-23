@@ -99,6 +99,8 @@ input[type="text"]	{background-color: #EEEEEE;
 /* Matching screen */
 .match_div	{background-color: #F6DC5C; color: white;
 			width: 320px; position: fixed; top:1.5em; text-align: center;}
+.match_wait_div {background-color: #F6DC5C; color: white;
+			width: 320px; height: 480px; position: fixed; top:1.5em; text-align: center;}
 .centered_message	{margin: 8em 1em 1em 1em;}
 #wait		{width: 6em;}
 

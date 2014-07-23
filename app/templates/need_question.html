@@ -4,7 +4,7 @@
 <div class="green_need question_div">
 	<div class="question_header">
 		<img id="home" src="{{ url_for('static', filename='Home.svg') }}" onClick="location.href='{{ url_for('index') }}'">
-				<div class="progress_count">1 of 10</div>
+				<div class="progress_count">{{need_counter+1}} of 4</div>
 	</div>
 
 	<div class="question_box green_shadow">	
@@ -15,12 +15,12 @@
 
 
 	<div class="swipe_bar">
-		<div class="left_swipe" onClick="location.href='{{ url_for('i_need') }}'">
+		<div class="left_swipe" onClick="location.href='{{ url_for('i_need', need_counter=need_counter) }}'">
 			<img src="{{ url_for('static', filename='leftswipe.png') }}">
 			<div class="swipe_text">Swipe left <br>for NO</div>
 		</div>
 		<div class="swipe_spacer"></div>
-		<div class="right_swipe" onClick="location.href='{{ url_for('i_need') }}'">
+		<div class="right_swipe" onClick="location.href='{{ url_for('i_need', need_counter=need_counter) }}'">
 			<img src="{{ url_for('static', filename='rightswipe.png') }}">
 			<div class="swipe_text">Swipe right <br>for YES</div>
 		</div>
@@ -28,7 +28,7 @@
 
 
 
-	<div class="skip_bar"><a href="{{ url_for('i_need') }}">Skip to next question</a></div>
+	<div class="skip_bar"><a href="{{ url_for('i_need', need_counter=need_counter) }}">Skip to next question</a></div>
 </div>
 
 {% endblock %}	
