@@ -1,15 +1,19 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<div class="question_block">
-	<span class="left_swipe"><a href="{{ url_for('i_want') }}"> &#60 Swipe left for no.</a></span>
-	<span class="question_text">{{question}}</span>
-	<span class="right_swipe"> <a href="{{ url_for('i_want') }}">Swipe right for yes. &#62</a></span>
+<div class="purple_want question_div">
+	<div class="question_header">
+		<img id="home" src="{{ url_for('static', filename='Home.svg') }}">
+		<div class="progress_count">1 of 10</div>
+	</div>
+
+	<div class="question_box purple_shadow">
+		<div class="left_swipe"><a href="{{ url_for('i_want') }}">Swipe left for NO</a></div>
+		<div class="question_text"><h1>{{question}}</h1></div>
+		<div class="right_swipe"> <a href="{{ url_for('i_want') }}">Swipe right for YES</a></div>
+	</div>
+
+	<div class="skip_bar"><a href="{{ url_for('i_want') }}">Skip to next question</a></div>
 </div>
-<button class="testing_box" onClick="location.href='{{ url_for('index') }}'">Testers: skip to the end of this section.</button>
-
-
-</div>
-
 
 {% endblock %}	

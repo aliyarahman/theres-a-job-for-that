@@ -1,9 +1,13 @@
+/* Base */
 body		{background-color: black; width: 320px; height: 480px; margin:auto;}
 .content 	{padding: 0em;
 			font-family: Arial;
 			font-weight: bold;
 			color: #333333;}
+a 			{text-decoration: none; color: white; font-weight: normal;}
 
+
+/*Login page view*/
 .landing_div	{height: 480px;
 				background-image: radial-gradient(circle farthest-side at right bottom, #FFFFFF 0%, #0064A4 100%);}
 .login_box			{text-align: center;
@@ -16,51 +20,63 @@ input[type="text"]	{background-color: #EEEEEE;
 					font-size: 1em;
 					margin-bottom: 1.25em;
 					width: 75%;}
-
 #signup_button		{padding: 1em;
 					display: inline-block;
 					border: none;
 					font-weight: bold;
 					width: 5em;}
 #signup_button:hover	{background-color: #333333; color: white;}
-
 #login_button		{padding: 1em;
 					display: inline-block;
 					border: none;
 					font-weight: bold;
 					width: 5em;}
 #login_button:hover	{background-color: #333333; color: white;}
-
 .lower_third		{width: 85%;
 					margin-left: auto;
 					margin-right: auto;
 					border-top: 0.09em white solid;
 					margin-top: 2.5em;}
 #connect			{font-size: 0.75em;}
-
 .soc_media_bar img		{vertical-align: middle; width:2em; padding-right: 0.3em;}
 .soc_media_link			{display: inline-block; padding: 0.5em; padding-right: 0.8em;}
 .soc_media_link:hover			{color: white; background-color:#333333;}
 .nav_bar				{text-align: center;}
 .nav_bar img 			{height: 2em; vertical-align: middle; margin-right: 0.4em;}
 
+
+
+
+/*Question menu view*/
 .category_menu				{margin-top: 3em; }
-
-
 .question_cat_button		{background-color: #EEEEEE; 
 							width: 75%; margin-left: auto; margin-right: auto; 
 							padding: 1em; margin-top: 1em;}
 .question_cat_button:hover	{background-color: #FD8602; color: white;}
-
-
 .question_cat_number		{font-size: 1.5em; text-align: center;
 							border: solid 0.1em; border-radius: 50%; width:1.2em; height:1.2em; 
 							display:inline-block;}
-
 .question_cat_text			{display:inline-block; margin-left: 0.5em;}
 .question_cat_head			{vertical-align: top;}
 .question_cat_subtext		{font-size: 0.8em; width: 100%;}
-
-
 .lower_quarter	{background-color: white; position: fixed; top: 27em; width: 320px; }
 .nav_bar		{text-align: center; padding: 0.75em;}
+
+
+
+/* Single question view */
+.question_div	{height: 480px; margin-top:1.75em;}
+.question_header	{ color: white}
+.question_box	{background-color: white; margin-left: 15%; margin-right: 15%; height: 70%;}
+.question_text 	{color: black; padding-left: 2em; padding-right: 2em;}
+#home			{height: 3em; margin: 0.75em; margin-right: 4em; vertical-align: middle;}
+.progress_count	{opacity: 0.5; display: inline-block;}
+.skip_bar		{color: white; text-align: center; margin-top: 2em;}
+
+/* Question categories */
+.orange_can {background-color: #FD8602;}
+.purple_want {background-color:#611EC6;}
+.green_need {background-color: #74C004;}
+.orange_shadow {box-shadow: 10px 15px 0px #985C1B;}
+.purple_shadow {box-shadow: 10px 15px 0px #4A297C;}
+.green_shadow {box-shadow: 10px 15px 0px #53791C;}
