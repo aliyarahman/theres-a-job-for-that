@@ -1,5 +1,5 @@
 /* Base */
-body		{background-color: black; width: 320px; height: 480px; margin:auto;}
+body		{background-color: black; width: 320px; height: 480px; margin:auto; overflow: scroll;}
 .content 	{padding: 0em;
 			font-family: Arial;
 			font-weight: bold;
@@ -130,7 +130,7 @@ input[type="text"]	{background-color: #EEEEEE;
 #search_glass	{width: 1.2em; vertical-align: bottom; margin-left: 1em;}
 .job_listing			{width: 100%; text-align: left;
 						background-color: white; height: 4em; margin-bottom: 0.1em;}
-.job_title {color: #3390E9; font-size: 1.2em; line-height: 3em; margin-left: 0.5em; 
+.job_title {color: #3390E9; font-size: 1.2em; line-height: 3em; margin-left: 0.75em; 
 				width: 80%; display: inline-block;}
 
 #star	{color: black; opacity: 0.7; display:inline-block; font-size: 2em; vertical-align: middle}
