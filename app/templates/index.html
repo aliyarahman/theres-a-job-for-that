@@ -1,15 +1,43 @@
 {% extends 'base.html' %}
 {% block content %}
 
-
-<div class="question_buttons_holder">
-<h2> Tell us about yourself.</h2>
-<br>
-<a href="{{ url_for('i_can') }}"><div class="section_button">I can...</div></a>
-<a href="{{ url_for('i_want') }}"><div class="section_button">I want...</div></a>
-<a href="{{ url_for('i_need') }}"><div class="section_button">I need...</div></a>
-<button class="testing_box" onClick="location.href='{{ url_for('skills') }}'">Testers: skip to jobs list.</button>
-
+<div class="landing_div">
+<div class="header">
+	<h2 class="landing">Welcome! Let's start to create your profile</h2>
 </div>
 
+<div class="category_menu">
+	<div class="question_cat_button">
+		<div class="question_cat_number">1</div>
+		<div class="question_cat_text">
+			<div class="question_cat_head">I Can...</div>
+			<div class="question_cat_subtext">Speak Spanish, Drive a car...</div>
+		</div>
+	</div>
+
+
+	<div class="question_cat_button">
+		<div class="question_cat_number">2</div>
+		<div class="question_cat_text">
+			<div class="question_cat_head">I Want...</div>
+			<div class="question_cat_subtext">To learn new skills, to work outdoors...</div>
+		</div>
+	</div>
+
+
+	<div class="question_cat_button">
+		<div class="question_cat_number">3</div>
+		<div class="question_cat_text">
+			<div class="question_cat_head">I Need...</div>
+			<div class="question_cat_subtext">A veteran-friendly employer</div>
+		</div>
+	</div>
+</div>
+
+<div class="lower_quarter">
+	<div class="nav_bar">
+		<div class="soc_media_link"><img src="{{url_for('static', filename="user.svg")}}">My Account</div>
+	</div>
+</div>
+</div>
 {% endblock %}	

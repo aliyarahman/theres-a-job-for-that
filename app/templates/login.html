@@ -1,10 +1,12 @@
 {% extends 'base.html' %}
 {% block content %}
 
-
+<div class="landing_div">
 <div class="header">
 	<h2 class="landing">There's a Job For That</h2>
 </div>
+
+
 <div class="login_box">
 	<form action="/index">
 		<input type="text" placeholder="Your name">	
@@ -18,10 +20,10 @@
 <div class="lower_third">
 	<p><span id="connect">OR, CONNECT USING:</span></p>
 	<div class="soc_media_bar">
-		<img src="{{url_for('static', filename="facebook.png")}}">Facebook
+		<div class="soc_media_link"><img src="{{url_for('static', filename="Facebook.svg")}}">Facebook</div>
 		<div id="soc_media_spacer"> </div>
-		<img src="{{url_for('static', filename="linkedin.png")}}">LinkedIn
+		<div class="soc_media_link"><img src="{{url_for('static', filename="LinkedIn.svg")}}">LinkedIn</div>
 	</div>
 </div>
-
+</div>
 {% endblock %}	

@@ -1,27 +1,22 @@
 body		{background-color: black;}
 .content 	{width: 320px; height: 480px;
-			margin: auto; margin-top: 10%;
 			padding: 0em;
-			background-image: radial-gradient(circle farthest-side at right bottom, #FFFFFF 0%, #0064A4 100%);
+			margin-left: auto; margin-right: auto;
 			font-family: Arial;
 			font-weight: bold;
-			color: #333333;
-			}
+			color: #333333;}
 
-
-.header				{text-align: center;
-					padding-top: 0.5em;
-					padding-bottom: 0.5em;}
-.login_box			{text-align: center;}
-
-h2.landing			{color: #FFFFFF;}
+.landing_div	{height: 480px;
+				background-image: radial-gradient(circle farthest-side at right bottom, #FFFFFF 0%, #0064A4 100%);}
+.login_box			{text-align: center;
+					margin-top: 4em;}
+h2.landing			{color: #FFFFFF; text-align: left; margin: 1em; position: relative; top: 1em; margin-bottom: 1em;}
 input[type="text"]	{background-color: #EEEEEE;
 					padding: 1em;
-					padding-left: 1em;
 					font-weight: bold;
 					border: none;
 					font-size: 1em;
-					margin-bottom: 1.5em;
+					margin-bottom: 1.25em;
 					width: 75%;}
 
 #signup_button		{padding: 1em;
@@ -42,9 +37,25 @@ input[type="text"]	{background-color: #EEEEEE;
 					margin-left: auto;
 					margin-right: auto;
 					border-top: 0.09em white solid;
-					margin-top: 4em;
-					padding-top: 0.25em;}
+					margin-top: 2.5em;}
 #connect			{font-size: 0.75em;}
 
 .soc_media_bar img		{vertical-align: middle; width:2em; padding-right: 0.3em;}
-#soc_media_spacer		{width: 2.5em; display: inline-block;}
+#soc_media_spacer		{width: 0.4em; display: inline-block;}
+.soc_media_link			{display: inline-block; padding: 0.5em; padding-right: 0.8em;}
+.soc_media_link:hover			{color: white; background-color:#333333;}
+.nav_bar				{text-align: center;}
+.nav_bar img 			{height: 2em; vertical-align: middle; margin-right: 0.4em;}
+
+.category_menu				{margin-top: 3em; margin-bottom: 5em;}
+.question_cat_button		{background-color: #EEEEEE; 
+							width: 80%; margin-left: auto; margin-right: auto; 
+							padding: 1em; margin-top: 1em;}
+.question_cat_button:hover	{background-color: #FD8602; color: white;}
+.question_cat_number		{font-size: 1.5em; text-align: center;
+							border: solid 0.1em; border-radius: 1em; width: 1.3em; display:inline-block;}
+.question_cat_text			{display:inline-block; margin-left: 0.5em;}
+.question_cat_head			{}
+.question_cat_subtext			{font-size: 0.7em;}
+.lower_quarter	{background-color: white;}
+.nav_bar		{text-align: right; padding: 0.75em;}
