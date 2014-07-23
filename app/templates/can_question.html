@@ -3,14 +3,20 @@
 
 <div class="orange_can question_div">
 	<div class="question_header">
-		<img id="home" src="{{ url_for('static', filename='Home.svg') }}">
+		<img id="home" src="{{ url_for('static', filename='Home.svg') }}" onClick="location.href='{{ url_for('index') }}'">
 		<div class="progress_count">1 of 10</div>
 	</div>
 
 	<div class="question_box orange_shadow">
-		<div class="left_swipe"><a href="{{ url_for('i_can') }}">Swipe left for NO</a></div>
+		<div class="left_swipe" onClick="location.href='{{ url_for('i_can') }}'">
+			<img src="{{ url_for('static', filename='leftswipe.png') }}">
+			<div class="swipe_text">Swipe left for NO</div>
+		</div>
 		<div class="question_text"><h1>{{question}}</h1></div>
-		<div class="right_swipe"> <a href="{{ url_for('i_can') }}">Swipe right for YES</a></div>
+		<div class="right_swipe" onClick="location.href='{{ url_for('i_can') }}'">
+			<img src="{{ url_for('static', filename='rightswipe.png') }}">
+			<div class="swipe_text">Swipe right for YES</div>
+		</div>
 	</div>
 
 	<div class="skip_bar"><a href="{{ url_for('i_can') }}">Skip to next question</a></div>

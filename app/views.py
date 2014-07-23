@@ -37,9 +37,9 @@ def i_need():
 
 
 # Notification of skill language generated
-@app.route('/skills')
+@app.route('/matching')
 def skills():
-	return render_template('skills.html')
+	return render_template('matching.html')
 
 
 # Displays calculated list of jobs (after algorithm)

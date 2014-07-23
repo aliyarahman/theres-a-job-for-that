@@ -87,3 +87,10 @@ input[type="text"]	{background-color: #EEEEEE;
 .orange_shadow {box-shadow: 10px 15px 0px #985C1B;}
 .purple_shadow {box-shadow: 10px 15px 0px #4A297C;}
 .green_shadow {box-shadow: 10px 15px 0px #53791C;}
+
+
+/* Matching screen */
+.match_div	{background-color: #F6DC5C; color: white;
+			width: 320px; height:480px; position: fixed; top:1.5em; text-align: center;}
+.match_div h2	{margin: 1em; margin-top: 6em;}
+#wait		{width: 6em;}
