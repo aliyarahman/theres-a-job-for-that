@@ -14,18 +14,17 @@
 	</div>
 
 
-<div class="swipe_bar">
-	<div class="left_swipe" onClick="location.href='{{ url_for('i_can') }}'">
-		<img src="{{ url_for('static', filename='leftswipe.png') }}">
-		<div class="swipe_text">Swipe left <br>for NO</div>
+	<div class="swipe_bar">
+		<div class="left_swipe" onClick="location.href='{{ url_for('i_can') }}'">
+			<img src="{{ url_for('static', filename='leftswipe.png') }}">
+			<div class="swipe_text">Swipe left <br>for NO</div>
+		</div>
+		<div class="swipe_spacer"></div>
+		<div class="right_swipe" onClick="location.href='{{ url_for('i_can') }}'">
+			<img src="{{ url_for('static', filename='rightswipe.png') }}">
+			<div class="swipe_text">Swipe right <br>for YES</div>
+		</div>
 	</div>
-	<div class="swipe_spacer"></div>
-	<div class="right_swipe" onClick="location.href='{{ url_for('i_can') }}'">
-		<img src="{{ url_for('static', filename='rightswipe.png') }}">
-		<div class="swipe_text">Swipe right <br>for YES</div>
-	</div>
-</div>
-
 
 
 	<div class="skip_bar"><a href="{{ url_for('i_can') }}">Skip to next question</a></div>

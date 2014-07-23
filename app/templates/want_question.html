@@ -7,15 +7,22 @@
 		<div class="progress_count">1 of 10</div>
 	</div>
 
-	<div class="question_box purple_shadow">
+	<div class="question_box purple_shadow">	
+		<div class="question_text">
+			<h1>{{question}}</h1>
+		</div>
+	</div>
+
+
+	<div class="swipe_bar">
 		<div class="left_swipe" onClick="location.href='{{ url_for('i_want') }}'">
 			<img src="{{ url_for('static', filename='leftswipe.png') }}">
-			<div class="swipe_text">Swipe left for NO</div>
+			<div class="swipe_text">Swipe left <br>for NO</div>
 		</div>
-		<div class="question_text"><h1>{{question}}</h1></div>
+		<div class="swipe_spacer"></div>
 		<div class="right_swipe" onClick="location.href='{{ url_for('i_want') }}'">
 			<img src="{{ url_for('static', filename='rightswipe.png') }}">
-			<div class="swipe_text">Swipe right for YES</div>
+			<div class="swipe_text">Swipe right <br>for YES</div>
 		</div>
 	</div>
 
