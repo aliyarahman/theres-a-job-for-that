@@ -1,11 +1,50 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<br><br><br><br><br><div class="jobsholder">
-<h2> Explore your list.</h2>
-{% for job in jobs %}
-	<div class="job_thumb" onClick="location.href='{{ url_for('jobView', id=job.id) }}'"><span class="star">&#9734</span>{{job.title}}</div>
-{% endfor %}
+<div class="match_div">
+	<div class="match_header">
+		<img id="match_home" src="{{ url_for('static', filename='Home.svg') }}" onClick="location.href='{{ url_for('index') }}'">
+	</div>
+
+
+	<div class="profile_box">
+		<div class="section_title">
+			<h2>Your Skills</h2>
+		</div>
+		<div class="profile_content">
+			<img id="user" src="{{ url_for('static', filename='user.svg') }}">
+			<h3>Firstname Lastname</h3>
+			<div class="skill_list"><span id="myskills">MY SKILLS</span>
+				<ul>
+					<li><span>Fluent in Spanish</span></li>
+					<li><span>Car repair</span></li>
+				</ul>
+			</div>
+
+			<div class="profile_footer">
+				<span>Full profile</span>
+				<span id="retake"><a href='{{ url_for('index') }}'>Retake Questionnaire</a></span>
+			</div>
+		</div>
+
+	</div>
+
+
+	<div class="job_box">
+		<div class="section_title">
+			<h2>Matching Jobs</h2>
+			<div class="job_box_options"><span id="sort">SORT</span><img id="search_glass" src="{{ url_for('static', filename='SearchGlass.svg') }}"></div>
+		</div>
+		
+		{% for job in jobs %}
+		<div class="job_listing" onClick="location.href='{{ url_for('jobView', id=job.id) }}'">		<div class="job_title">{{job.title}}</div>
+			<div id="star">&#9734</div>
+		</div>
+		{% endfor %}
+	
+	</div>
+
+
 </div>
 
 {% endblock %}	

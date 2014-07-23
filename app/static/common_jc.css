@@ -91,6 +91,47 @@ input[type="text"]	{background-color: #EEEEEE;
 
 /* Matching screen */
 .match_div	{background-color: #F6DC5C; color: white;
-			width: 320px; height:480px; position: fixed; top:1.5em; text-align: center;}
-.match_div h2	{margin: 1em; margin-top: 6em;}
+			width: 320px; position: fixed; top:1.5em; text-align: center;}
+.centered_message	{margin: 8em 1em 1em 1em;}
 #wait		{width: 6em;}
+
+
+/* Myjobs screen */
+.match_header	{text-align: left;}
+#match_home		{height: 3em; margin: 0.75em; margin-bottom: 0em;}
+
+.profile_box .section_title, .job_box .section_title	{text-align: left; 
+			color: black; margin-left: 0.75em; margin-bottom: -0.75em;}
+.section_title h2	{opacity: 0.4;}
+
+.profile_content	{width: 93%; margin: 0em auto 1em auto; background-color: white; text-align: left;}
+.profile_footer		{background-color: #EEEEEE; color: #3390E9; 
+					margin: 0em auto 2em auto; height: 2.5em;
+					line-height: 2.5em; text-align: left; padding-left: 0.75em;}
+.profile_content h3	{color: black; display: inline-block;}
+#myskills		{font-size: 0.75em;}
+.skill_list		{color: black; margin: 1em;}
+.skill_list	ul	{margin: 0.1em;}
+.skill_list li  {margin-left: -3.5em; font-size: 0.5em;}
+.skill_list li span	{font-size: 2em; vertical-align: middle;}
+#retake a		{font-weight: bold; color: #3390E9; margin-left: 1em;}
+#user			{width: 3em; margin: 0.5em; display: inline-block; vertical-align: top;}
+
+.job_box h2, .job_box_options	{display: inline-block;}
+.job_box_options	{margin-left: 2em;}
+#sort	{opacity: 0.75;}
+#search_glass	{width: 1.2em; vertical-align: bottom; margin-left: 1em;}
+.job_listing			{width: 100%; text-align: left;
+						background-color: white; height: 4em; margin-bottom: 0.1em;}
+.job_title {color: #3390E9; font-size: 1.2em; line-height: 3em; margin-left: 0.5em; 
+				width: 80%; display: inline-block;}
+#star	{color: black; opacity: 0.7; display:inline-block; font-size: 2em; vertical-align: middle}
+
+
+
+
+
+
+
+
+
