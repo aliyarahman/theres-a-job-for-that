@@ -136,6 +136,25 @@ input[type="text"]	{background-color: #EEEEEE;
 #star	{color: black; opacity: 0.7; display:inline-block; font-size: 2em; vertical-align: middle}
 
 
+/* Job view */
+.job_div	{height: 480px; margin-top:1.75em;background-color: #F6DC5C; color: white;
+			width: 320px; position: fixed; top:1.5em; text-align: center;}
+.job_header	{text-align: left;}
+.job_box 	{background-color: white;
+			margin-left: 15%; margin-right: 15%; height: 70%; 
+			display: inline-block;
+			box-shadow: 10px 15px 0px #c4b049;
+			}
+.job_image	{height: 10em; width: 10em; margin-top: 3em; border: 0.2em lightgray solid;
+			border-radius: 0.5em;}
+.job_image h2	{color: gray;}
+.job_swipe_bar	{position: absolute; top: 18em;}
+.job_swipe_spacer	{display: inline-block; width: 3.1em;}
+.job_left_swipe, .job_right_swipe	{height: 5.5em; width: 6.5em; border-radius: 50%;
+							padding: 0.5em 1.25em 3em 1.25em; text-align: center; 
+							color: white; background-color: black; opacity: 0.7;
+							font-size: 0.8em; font-weight: normal; display: inline-block;
+							margin:0.6em;}
 
 
 
