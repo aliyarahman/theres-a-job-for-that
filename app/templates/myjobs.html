@@ -37,7 +37,7 @@
 		</div>
 		
 		{% for job in jobs %}
-		<div class="job_listing" onClick="location.href='{{ url_for('jobView', id=job.id) }}'">		<div class="job_title">{{job.title}}</div>
+		<div class="job_listing" onClick="location.href='{{ url_for('jobView', id=job.id) }}'">		<div class="job_title" onClick="location.href='{{ url_for('jobView', id=job.id) }}'">{{job.title}}</div>
 			<div id="star">&#9734</div>
 		</div>
 		{% endfor %}
