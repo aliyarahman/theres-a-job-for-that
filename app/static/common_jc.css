@@ -73,10 +73,10 @@ input[type="text"]	{background-color: #EEEEEE;
 #home			{height: 3em; margin: 0.75em; margin-right: 4em; vertical-align: middle;}
 .progress_count	{opacity: 0.5; display: inline-block;}
 .skip_bar		{color: white; text-align: center; margin-top: 2em;}
-.left_swipe, .right_swipe	{height: 4em; width: 4em; border-radius: 50%;
-							color: white; background-color: black; opacity: 0.6;
+.left_swipe, .right_swipe	{height: 5em; width: 5em; border-radius: 50%;
+							color: white; background-color: black; opacity: 0.7;
 							font-size: 0.8em; font-weight: normal;
-							padding: 2em; text-align: center; position: absolute; top: 15em;}
+							text-align: center; position: absolute; top: 22em; padding: 1em 1.75em 2.5em 1.75em; }
 .left_swipe		{left: 34em; }
 .right_swipe	{right: 34em; }
 
