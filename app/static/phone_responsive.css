@@ -144,17 +144,16 @@ input[type="text"]	{background-color: #EEEEEE;
 
 
 /* Job view */
-.job_div	{height: 480px; margin-top:1.75em;background-color: #F6DC5C; color: white;
+.job_div	{height: 480px; background-color: #F6DC5C; color: white;
 			width: 320px; position: fixed; top:1.5em; text-align: center;}
 .job_header	{text-align: left;}
-.single_job_box 	{background-color: white;
-			width: 80%; margin-left: auto%; margin-right: auto%; height: 70%; 
+.single_job_box 	{background-color: white;;
+			width: 80%; margin-left: auto%; margin-right: auto%; height: 80%; 
 			display: inline-block;
 			box-shadow: 10px 15px 0px #c4b049;
 			}
-.job_image	{height: 10em; width: 10em; margin-left: auto; margin-right: auto; margin-top: 3em; border: 0.2em lightgray solid;
-			border-radius: 0.5em;}
-.job_image h2	{color: gray;}
+.job_image	{height: 10em; width: 12em; margin-left: auto; margin-right: auto; margin-top: 1em; border: 0.2em lightgray solid;}
+.single_job_box h2	{text-align: left;}
 .job_swipe_bar	{position: absolute; top: 18em;}
 .job_swipe_spacer	{display: inline-block; width: 3.1em;}
 .job_left_swipe, .job_right_swipe	{height: 5.5em; width: 6.5em; border-radius: 50%;
