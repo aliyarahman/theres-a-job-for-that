@@ -43,7 +43,7 @@ def i_need(need_counter):
 	if counter==3:
 		return redirect('matching')
 	counter+=1
-	need_questions = ['I need flexible work hours', 'I need trans inclusive health care', 'I need a veteran friendly employer', 'I need an employer who might hire people with criminal records']
+	need_questions = ['I need flexible work hours', 'I need trans inclusive health care', 'I need a veteran friendly employer', 'I need an employer who hires people with criminal records']
 	need_question = need_questions[counter]
 	return render_template('need_question.html', question=need_question, need_counter= counter)
 

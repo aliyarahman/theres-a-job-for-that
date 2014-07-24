@@ -69,8 +69,7 @@ input[type="text"]	{background-color: #EEEEEE;
 .question_header { color: white}
 .question_box	{background-color: white;
 				margin-left: 15%; margin-right: 15%; height: 70%; 
-				display: inline-block;
-				z-index: 1;}
+				display: inline-block;}
 .question_text 	{color: black; padding-left: 2em; padding-right: 2em; vertical-align: middle;}
 
 #home			{height: 3em; margin: 0.75em; margin-right: 4em; vertical-align: middle;}

@@ -29,4 +29,20 @@
 	<div class="skip_bar"><a href="{{ url_for('i_want', want_counter=want_counter) }}">Skip to next question</a></div>
 </div>
 
+<script>
+
+$(document).ready(function(){
+  $("div.question_box").click(function(){
+    window.location.href = '{{ url_for('i_want', want_counter=want_counter) }}';
+    return false
+  });
+   $(".swipe_bar").click(function(){
+    window.location.href = '{{ url_for('i_want', want_counter=want_counter) }}';
+    return false
+  });
+});
+
+	</script>
+
+
 {% endblock %}	
