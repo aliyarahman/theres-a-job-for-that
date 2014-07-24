@@ -32,11 +32,11 @@
 <script>
 
 $(document).ready(function(){
-  $("div.question_box").click(function(){
+  $("div.question_box").on("swipe",function(){
     window.location.href = '{{ url_for('i_want', want_counter=want_counter) }}';
     return false
   });
-   $(".swipe_bar").click(function(){
+   $(".swipe_bar").on("swipe",function(){
     window.location.href = '{{ url_for('i_want', want_counter=want_counter) }}';
     return false
   });
