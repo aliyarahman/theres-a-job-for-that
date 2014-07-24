@@ -17,12 +17,12 @@
 			<div class="skill_list"><span id="myskills">MY SKILLS</span>
 				<ul>
 					<li><span>Fluent in Spanish</span></li>
-					<li><span>Automobile repair</span></li>
+					<li><span>Automobile repair ...</span></li>
 				</ul>
 			</div>
 
 			<div class="profile_footer">
-				<span>Full profile</span>
+				<span>Full skillset</span>
 				<span id="retake"><a href='{{ url_for('index') }}'>Retake Questionnaire</a></span>
 			</div>
 		</div>
@@ -36,12 +36,15 @@
 			<div class="job_box_options"><span id="sort">SORT</span><img id="search_glass" src="{{ url_for('static', filename='SearchGlass.svg') }}"></div>
 		</div>
 		
+		<div class="job_holder">
 		{% for job in jobs %}
-		<div class="job_listing" onClick="location.href='{{ url_for('jobView', id=job.id) }}'">		<div class="job_title" onClick="location.href='{{ url_for('jobView', id=job.id) }}'">{{job.title}}</div>
-			<div id="star">&#9734</div>
-		</div>
+			<div class="job_listing" onClick="location.href='{{ url_for('jobView', id=job.id) }}'">	
+				<div class="job_title" onClick="location.href='{{ url_for('jobView', id=job.id) }}'">{{job.title}}</div>
+				<div id="star">&#9734</div>
+			</div>
+		
 		{% endfor %}
-	
+		</div>
 	</div>
 
 

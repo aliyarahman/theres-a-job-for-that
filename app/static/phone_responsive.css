@@ -1,5 +1,5 @@
 /* Base */
-body		{background-color: black; width: 320px; height: 480px; margin:auto; overflow: scroll;}
+body		{background-color: black; width: 320px; height: 480px; margin:auto;}
 .content 	{padding: 0em;
 			font-family: Arial;
 			font-weight: bold;
@@ -98,7 +98,9 @@ input[type="text"]	{background-color: #EEEEEE;
 
 /* Matching screen */
 .match_div	{background-color: #F6DC5C; color: white;
-			width: 320px; position: fixed; top:1.5em; text-align: center;}
+			width: 320px; height: 480px;
+			position: fixed; top:1.5em; text-align: center;
+			overflow: scroll;}
 .match_wait_div {background-color: #F6DC5C; color: white;
 			width: 320px; height: 480px; position: fixed; top:1.5em; text-align: center;}
 .centered_message	{margin: 8em 1em 1em 1em;}
@@ -108,7 +110,6 @@ input[type="text"]	{background-color: #EEEEEE;
 /* Myjobs screen */
 .match_header	{text-align: left;}
 #match_home		{height: 3em; margin: 0.75em; margin-bottom: 0em;}
-
 .profile_box .section_title, .job_box .section_title	{text-align: left; 
 			color: black; margin-left: 0.75em; margin-bottom: -0.75em;}
 .section_title h2	{opacity: 0.4;}
@@ -125,17 +126,21 @@ input[type="text"]	{background-color: #EEEEEE;
 .skill_list li span	{font-size: 2em; vertical-align: middle;}
 #retake a		{font-weight: bold; color: #3390E9; margin-left: 1em;}
 #user			{width: 3em; margin: 0.5em; display: inline-block; vertical-align: top;}
+.job_holder		{overflow: scroll; -ms-overflow-style: none;}
 
 .job_box h2, .job_box_options	{display: inline-block;}
 .job_box_options	{margin-left: 2em;}
 #sort	{opacity: 0.75;}
 #search_glass	{width: 1.2em; vertical-align: bottom; margin-left: 1em;}
+
 .job_listing			{width: 100%; text-align: left;
 						background-color: white; height: 4em; margin-bottom: 0.1em;}
 .job_title {color: #3390E9; font-size: 1.2em; line-height: 3em; margin-left: 0.75em; 
 				width: 80%; display: inline-block;}
-
 #star	{color: black; opacity: 0.7; display:inline-block; font-size: 2em; vertical-align: middle}
+
+
+
 
 
 /* Job view */
@@ -160,7 +165,4 @@ input[type="text"]	{background-color: #EEEEEE;
 
 
 
-
-
-
-
+::-webkit-scrollbar {width:0px; height:0px};
