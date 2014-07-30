@@ -143,24 +143,20 @@ input[type="text"]	{background-color: #EEEEEE;
 
 
 /* Job view */
-.job_div	{height: 480px; background-color: #F6DC5C; color: white;
+.job_div	{height: 480px; background-color: #F6DC5C;
 			width: 320px; position: fixed; top:1.5em; text-align: center;}
 .job_header	{text-align: left;}
-.single_job_box 	{background-color: white;;
-			width: 80%; margin-left: auto%; margin-right: auto%; height: 80%; 
+.single_job_box 	{background-color: #EFEFEF;
+			width: 75%; margin-left: auto; margin-right: auto; height: 72%; 
 			display: inline-block;
-			box-shadow: 10px 15px 0px #c4b049;
+			box-shadow: 10px 15px 0px #938647;
 			}
-.job_image	{height: 10em; width: 12em; margin-left: auto; margin-right: auto; margin-top: 1em; border: 0.2em lightgray solid;}
+.single_job_title	{font-size: 2em;}
+.single_job_star	{color: black; font-weight: normal; opacity: 0.3; position:fixed; top: 2em; right:3.45em; font-size: 3em; text-align: right}
+.jobpic				{width: 12em; margin-left: auto; margin-right: auto;}
 .single_job_box h2	{text-align: left;}
-.job_swipe_bar	{position: absolute; top: 18em;}
-.job_swipe_spacer	{display: inline-block; width: 3.1em;}
-.job_left_swipe, .job_right_swipe	{height: 5.5em; width: 6.5em; border-radius: 50%;
-							padding: 0.5em 1.25em 3em 1.25em; text-align: center; 
-							color: white; background-color: black; opacity: 0.7;
-							font-size: 0.8em; font-weight: normal; display: inline-block;
-							margin:0.6em;}
-
+.job_links_holder p	{color: #3390E9; width: 12em; text-align: left; margin-left: 2em;}
+.back_link		{font-weight: normal; margin-top: 2em;}
 
 
 ::-webkit-scrollbar {width:0px; height:0px};

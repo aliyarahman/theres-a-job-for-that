@@ -1,31 +1,23 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<div class="orange_can job_div">
+<div class="job_div">
 	<div class="job_header">
 		<img id="home" src="{{ url_for('static', filename='Home.svg') }}" onClick="location.href='{{ url_for('index') }}'">
 	</div>
 
 	<div class="single_job_box">	
 		<div class="question_text">
-			<h2>{{job.title}}</h2>
-			<div class="job_image"></div>
+			<span class="single_job_star">&#9734</span>
+			<h2 class="single_job_title">{{job.title}} </h2>
+			<img class="jobpic" src="{{ url_for('static', filename='mechanic.png') }}">
+		</div>
+		<div class="job_links_holder">
+			<p class="">Find Training Near You</p>
+			<p class="">Find Open Jobs for {{job.title}}s</p>
 		</div>
 	</div>
-
-
-	<div class="job_swipe_bar">
-		<div class="job_left_swipe">
-			<img src="{{ url_for('static', filename='leftswipe.png') }}">
-			<div class="swipe_text">Swipe left to find training</div>
-		</div>
-		<div class="job_swipe_spacer"></div>
-		<div class="job_right_swipe">
-			<img src="{{ url_for('static', filename='rightswipe.png') }}">
-			<div class="swipe_text">Swipe right to find open jobs</div>
-		</div>
-	</div>
-
+	<p class="back_link" onClick="location.href='{{ url_for('myjobs') }}'">Back to matching jobs</p>
 </div>
 
 {% endblock %}	
