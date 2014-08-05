@@ -3,6 +3,7 @@
 import random
 from app import app	# Go get tools we need from the app folder
 from flask import render_template, redirect 	# So that we can render html files in our app
+import requests	# Allows us to make API calls
 
 @app.route('/')
 @app.route('/login')
@@ -68,3 +69,14 @@ def jobView(id):
 		if j['id']==int(id):
 			job=j
 	return render_template('jobView.html', job=job)
+
+
+# def find_job_postings():
+	# If user clicks to find postings:
+		# Make the Glassdoor API call
+		# redirect to Glassdoor URL
+
+# def find_training():
+	# IF the user clicks to find open training
+		# Make the NLx API call
+		# redirect to NLx URL
