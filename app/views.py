@@ -73,10 +73,10 @@ def jobView(id):
 
 # def find_job_postings():
 	# If user clicks to find postings:
-		# Make the Glassdoor API call
-		# redirect to Glassdoor URL
+		# Make the Glassdoor and NLx API calls
+		# redirect to Glassdoor (http://www.glassdoor.com/api/register_input.html) and NLx URLs (http://api.us.jobs)
 
 # def find_training():
 	# IF the user clicks to find open training
-		# Make the NLx API call
-		# redirect to NLx URL
+		# Make the mSmF API call
+		# redirect to mSmF URL
