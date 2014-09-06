@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="landing_div">
+<div class="header">
+	<h2 class="landing">Looking for a particular job?</h2>
+</div>
+
+<div class="category_menu">
+	<div class="question_cat_button">
+		<div class="question_cat_text">
+			<div class="question_cat_head">Search here</div>
+			<div class="searchbox"><input type="text"></div>
+		</div>
+	</div>
+
+
+	<div class="question_cat_button">
+		<div class="question_cat_head"><a href='{{url_for('index')}}'>Or just continue on to create your profile</a></div>
+	</div>
+
+
+</div>
+
+<div class="lower_quarter">
+	<div class="nav_bar">
+		<div class="soc_media_link" id="myjobslink" onClick="location.href='{{url_for('myjobs')}}'"><img src="{{url_for('static', filename="user.svg")}}">My Jobs</div>
+	</div>
+</div>
+</div>
+{% endblock %}	

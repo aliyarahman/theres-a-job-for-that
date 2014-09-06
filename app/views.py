@@ -10,6 +10,10 @@ import requests	# Allows us to make API calls
 def login():
 	return render_template('login.html')
 
+@app.route('/search')
+def search():
+	return render_template('search.html')
+
 @app.route('/index')	# This means this is the view for the landing page
 def index():
 	return render_template('index.html')
