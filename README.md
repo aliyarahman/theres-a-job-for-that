@@ -47,3 +47,7 @@ Visit the app at:
 http://theres-a-job-for-that.herokuapp.com
 
 A Postgres database drives the app.
+
+An original API constructed for the backend:
+- Accepts: keywords and question responses
+- Returns: job titles and questions 
