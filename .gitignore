@@ -1,3 +1,5 @@
 config.py
 venv
 *.pyc
+server_test.py
+test_vector.json
