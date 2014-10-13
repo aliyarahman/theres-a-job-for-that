@@ -14,7 +14,7 @@ def main(q):
         return r
 
 if __name__ == '__main__':
-    location = "Eau Claire, WI"
+    location = "Waterloo, IA"
     search_string ="retail sales"
     context = []
     q = { "keyword": search_string, "location": location, "context":context}
@@ -26,3 +26,6 @@ if __name__ == '__main__':
             context.append({"question":r['question'], "answer":answer})
             print context
             r = main(q)
+    jobs = r['jobs']
+    for j in jobs:
+        print j

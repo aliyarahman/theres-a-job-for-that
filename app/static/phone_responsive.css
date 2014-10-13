@@ -75,14 +75,14 @@ input[type="text"]	{background-color: #EEEEEE;
 #home			{height: 3em; margin: 0.75em; margin-right: 4em; vertical-align: middle;}
 .progress_count	{opacity: 0.5; display: inline-block;}
 
-.swipe_bar		{width: 320px; margin-left: auto; margin-right: auto;
+.swipe_bar		{width: 100%; margin-left: auto; margin-right: auto;
 				position: absolute; top: 18em;}
-.left_swipe, .right_swipe	{height: 5em; width: 6em; border-radius: 50%;
+.left_swipe, .right_swipe	{height: 5em; width: 5em; border-radius: 50%;
 							padding: 0.5em 1.25em 3em 1.25em; text-align: center; 
 							color: white; background-color: black; opacity: 0.7;
 							font-size: 0.8em; font-weight: normal; display: inline-block;
 							margin:1em;}
-.swipe_spacer	{display: inline-block; width: 2em;}
+.swipe_spacer	{display: inline-block; width: 10em;}
 .skip_bar		{color: white; text-align: center; margin-top: 2em;}
 
 
@@ -93,6 +93,7 @@ input[type="text"]	{background-color: #EEEEEE;
 .orange_shadow {box-shadow: 10px 15px 0px #985C1B;}
 .purple_shadow {box-shadow: 10px 15px 0px #4A297C;}
 .green_shadow {box-shadow: 10px 15px 0px #53791C;}
+.blue_shadow {box-shadow: 10px 15px 0px #46697f;}
 
 
 /* Matching screen */
@@ -158,5 +159,9 @@ input[type="text"]	{background-color: #EEEEEE;
 .job_links_holder p	{color: #3390E9; width: 12em; text-align: left; margin-left: 2em;}
 .back_link		{font-weight: normal; margin-top: 2em;}
 
+
+.job_question_box	{background-color: white;
+				margin-left: 15%; margin-right: 15%; margin-top: 10%; height: 50%; 
+				display: inline-block;}
 
 ::-webkit-scrollbar {width:0px; height:0px};

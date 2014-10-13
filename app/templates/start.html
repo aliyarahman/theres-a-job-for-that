@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="landing_div">
+<div class="header">
+	<h2 class="landing">Let's answer some quick questions about jobs you might be open to.</h2>
+</div>
+
+<div class="job_question_box blue_shadow">	
+	<div class="question_text">
+		<h1>Are you open to jobs in retail sales?</h1>
+	</div>
+</div>
+
+	<div class="swipe_bar">
+		<div class="left_swipe" onClick="location.href='{{url_for('start')}}'">
+			<img src="{{ url_for('static', filename='leftswipe.png') }}">
+			<div class="swipe_text">Swipe left <br>for NO</div>
+		</div>
+		<div class="swipe_spacer"></div>
+		<div class="right_swipe" onClick="location.href='{{url_for('start')}}'">
+			<img src="{{ url_for('static', filename='rightswipe.png') }}">
+			<div class="swipe_text">Swipe right <br>for YES</div>
+		</div>
+	</div>
+
+
+</div>
+{% endblock %}	
