@@ -3,14 +3,14 @@
 
 <div class="row">	
 	<div class="col-xs-12">
-		<h3>Let's answer some quick questions about jobs you might consider.</h3>
+		<h3>Let's make a list of job postings for you.</h3>
 	</div>
 </div>
 
-<div class="question_box job_box blue_shadow col-xs-10 col-xs-offset-1">
+<div class="question_box blue_shadow col-xs-10 col-xs-offset-1">
 	<div class="row">
 			<div class="col-xs-12 text-center">
-				<br><h1>Are you open to jobs in retail sales?</h1>
+				<br><h1>{{question}}</h1>
 			</div>
 	</div>
 </div>
@@ -36,10 +36,10 @@
 
 $(function(){
   function swipeleftHandler( event ){
-    window.location.replace("{{ url_for('start') }}"); }
+    window.location.replace("{{ url_for('question_view', swipe=0) }}"); }
 
   function swiperightHandler( event ){
-    window.location.replace("{{ url_for('question_view', swipe=2) }}"); }
+    window.location.replace("{{ url_for('question_view', swipe=1) }}"); }
 
   $( "div.question_box" ).on( "swipeleft", swipeleftHandler );
   $( "div.question_box" ).on( "swiperight", swiperightHandler );

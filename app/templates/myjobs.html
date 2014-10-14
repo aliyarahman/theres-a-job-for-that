@@ -1,53 +1,31 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<div class="match_div">
-	<div class="match_header">
-		<img id="match_home" src="{{ url_for('static', filename='Home.svg') }}" onClick="location.href='{{ url_for('myjobs') }}'">
+<div class="row">
+	<div class="col-xs-12">
+		<h2>Found {{job_count}} Matching Jobs</h2>
 	</div>
-
-
-	<div class="profile_box">
-		<div class="section_title">
-			<h2>Your Skills</h2>
-		</div>
-		<div class="profile_content">
-			<img id="user" src="{{ url_for('static', filename='usergray.svg') }}">
-			<h3>Firstname Lastname</h3>
-			<div class="skill_list"><span id="myskills">MY SKILLS</span>
-				<ul>
-					<li><span>Fluent in Spanish</span></li>
-					<li><span>Automobile repair ...</span></li>
-				</ul>
-			</div>
-
-			<div class="profile_footer">
-				<span>Full skillset</span>
-				<span id="retake"><a href='{{ url_for('index') }}'>Retake Questionnaire</a></span>
-			</div>
-		</div>
-
-	</div>
-
-
-	<div class="job_box">
-		<div class="section_title">
-			<h2>Matching Jobs</h2>
-			<div class="job_box_options"><span id="sort">SORT</span><img id="search_glass" src="{{ url_for('static', filename='SearchGlass.svg') }}"></div>
-		</div>
-		
-		<div class="job_holder">
-		{% for job in jobs %}
-			<div class="job_listing" onClick="location.href='{{ url_for('jobView', id=job.id) }}'">	
-				<div class="job_title" onClick="location.href='{{ url_for('jobView', id=job.id) }}'">{{job.title}}</div>
-				<div id="star">&#9734</div>
-			</div>
-		
-		{% endfor %}
-		</div>
-	</div>
-
-
 </div>
+
+
+<div class="row">	
+	<div class="col-xs-10 col-xs-offset-1 job_holder">
+
+	{% for job in jobs %}
+	    <div class="row">	
+			<div class="col-xs-12 job_listing">
+				<p><b>{{job.title}}</b></p>
+				<p>Posting URL: <a href={{job.posting_url}}>View posting</a></p>
+				<p>Found on: {{job.posting_source}}</p>
+				<p>Located: {{job.location}}</p>
+				<p>Posted: {{job.date_posted}}</p>
+				<p>Responsibilities: {{job.description}}</p>
+		    </div>
+		</div>
+	{% endfor %}
+
+	</div>
+</div>
+
 
 {% endblock %}	

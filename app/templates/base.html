@@ -2,28 +2,27 @@
 
 <html>
     <head>
-    	<meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>There's a Job for That</title>
-        <!-- link to bootstrap -->
-        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap.css') }}">
-		<link rel="stylesheet" type=text/css href="{{ url_for('static', filename='phone_responsive.css') }}">
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	    <title>There's a Job for That</title>
+
+	    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	    <script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	    <link rel="stylesheet" type=text/css href="{{ url_for('static', filename='application.css') }}">
+
     </head>
 
 	<body>
-
-
-		<div class="content">
+		<div class="container blue_gradient_background">
 			{% block content %}
 
 
+			{% endblock %}
 
-
-			{% endblock %}	
-		</div>
-		<!-- link to bootstrap.js -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        </div>
 	</body>
 
 
