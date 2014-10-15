@@ -1,6 +1,8 @@
 Flask==0.10.1
+Flask-WTF==0.10.2
 Jinja2==2.7.3
 MarkupSafe==0.23
+WTForms==2.0.1
 Werkzeug==0.9.6
 argparse==1.2.1
 certifi==14.05.14
@@ -8,3 +10,4 @@ gunicorn==19.0.0
 itsdangerous==0.24
 requests==2.4.0
 wsgiref==0.1.2
+xmltodict==0.9.0

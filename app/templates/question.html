@@ -3,7 +3,7 @@
 
 <div class="row">	
 	<div class="col-xs-12">
-		<h3>Let's make a list of job postings for you.</h3>
+		<h3 class="text-white">Let's talk about your skills.</h3>
 	</div>
 </div>
 
@@ -18,15 +18,15 @@
 <div class="row swipe_bar">
 	<div>
 		<div class="col-xs-4">
-			<div class="swipe_circle img-circle center-block">
+			<div class="swipe_circle img-circle center-block" onClick='location.href="{{ url_for('question_view', swipe=0) }}"'>
 				<img src="{{ url_for('static', filename='leftswipe.png') }}">
-				<div class="swipe_text center-block">Swipe left for NO</div>
+				<div class="swipe_text center-block">Swipe or tap left for NO</div>
 			</div>
 		</div>
 		<div class="col-xs-4 col-xs-offset-4">
-			<div class="swipe_circle img-circle center-block">
+			<div class="swipe_circle img-circle center-block" onClick='location.href="{{ url_for('question_view', swipe=1) }}"'>
 				<img src="{{ url_for('static', filename='rightswipe.png') }}">
-			    <div class="swipe_text center-block">Swipe right for YES</div>
+			    <div class="swipe_text center-block">Swipe or tap right for YES</div>
 		    </div>
 	    </div>
     </div>

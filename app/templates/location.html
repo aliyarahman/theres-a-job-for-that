@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+<div class="row text-center">
+	<div class="col-xs-12">
+		<br><br><h1 class="text-white">Where are you looking for work?</h1>
+		<br><br><br><br>
+	</div>
+</div>
+
+<div class="row"><div></div></div>
+
+<div class="row text-center">
+	<form role="form" action="" method="post" name="location">
+		{{form.hidden_tag() }}
+		<div class="form-group">
+			<br>{{form.city(placeholder="City", class="text-center input-lg")}}
+
+			<br><br>{{form.state(placeholder="State", class="text-center input-lg")}}</div>
+
+			<br><button type="submit" class="btn btn-primary btn-lg">Start looking!</button><br><br>
+	    </div>
+	</form>
+
+</div>
+
+{% endblock %}	

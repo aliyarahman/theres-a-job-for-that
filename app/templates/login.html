@@ -1,28 +1,29 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<div class="landing_div">
-<div class="header">
-	<h2 class="landing">There's a Job For That</h2>
-</div>
 
-
-<div class="login_box">
-	<form action="/index">
-		<input type="text" placeholder="Your name">	
-		<input type="text" placeholder="Your email">
-	</form>
-
-	<div id="signup_button" onClick="location.href='{{ url_for('start') }}'">Sign Up</div>
-	<div id="login_button" onClick="location.href='{{ url_for('start') }}'">Log In</div>
-</div>
-
-<div class="lower_third">
-	<p><span id="connect">OR, CONNECT USING:</span></p>
-	<div class="soc_media_bar">
-		<div class="soc_media_link"><img src="{{url_for('static', filename="Facebook.svg")}}">Facebook</div>
-		<div class="soc_media_link"><img src="{{url_for('static', filename="LinkedIn.svg")}}">LinkedIn</div>
+<div class="row text-center">
+	<div class="col-xs-12">
+		<br><br><h1 class="text-white">There's a Job For That</h1>
+		<br>
+		<h4 class="text-white">A simple way to find jobs that match your skills.</h4>
+		<br><br><br>
 	</div>
 </div>
+
+<div class="row"><div></div></div>
+
+<div class="row text-center">
+	<form role="form" action="" method="post" name="name">
+		{{ form.hidden_tag() }}
+		<div class="form-group">
+
+			<br>{{form.username(placeholder="What's your name?", class="text-center input-lg")}}
+			
+			<br><br><br><button type="submit" class="btn btn-primary btn-lg">Let's get started!</button>
+	    </div>
+	</form>
+
 </div>
+
 {% endblock %}	

@@ -5,6 +5,7 @@ import time
 import xmltodict
 from app import app	# Go get tools we need from the app folder
 from flask import render_template, redirect, url_for, session	# So that we can render html files in our app
+from .forms import NameForm, LocationForm
 import requests	# Allows us to make API calls
 
 
@@ -19,15 +20,26 @@ def api_call(q):
     return r
 
 
-@app.route('/')
-@app.route('/login')
+@app.route('/', methods=['GET', 'POST'])
 def login():
-	return render_template('login.html')
+    form = NameForm()
+    if form.validate_on_submit():
+        session['username'] = form.username.data
+        return redirect('/location')
+    return render_template('login.html', form=form)
+
+
+@app.route('/location', methods=['GET', 'POST'])
+def location():
+    form = LocationForm()
+    if form.validate_on_submit():
+        session['locaion'] = form.city.data+", "+form.state.data
+        return redirect('/start')
+    return render_template('location.html', form=form)
 
 
 @app.route('/start')
 def start():
-    session['location'] = "Waterloo, IA"
     session['search_string'] ="retail sales"
     session['context']=[]
     return render_template('start.html')
@@ -71,7 +83,5 @@ def myjobs():
             'location':j['loc']['#text'],
             'date_posted':j['dp'],
             'description':j['e']})
-
-
-    job_count = session['job_count']
+    job_count = len(jobs)
     return render_template('myjobs.html', jobs=jobs, job_count=job_count)

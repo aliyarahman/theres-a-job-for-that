@@ -1,4 +1,5 @@
 body {background-image: radial-gradient(circle farthest-side at right bottom, #FFFFFF 0%, #0064A4 100%);}
+.text-white { color: white;}
 
 .question_box {background-color: white; height: 30em; margin-top: 2em;}
 .job_box {height: 28em;}
@@ -8,3 +9,6 @@ body {background-image: radial-gradient(circle farthest-side at right bottom, #F
 .swipe_text {color: white ;width: 90%;}
 
 .job_holder  {background-color: white;}
+
+
+.ui-loader.ui-corner-all.ui-body-a.ui-loader-default {display:none;}
