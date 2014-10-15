@@ -33,7 +33,7 @@ def login():
 def location():
     form = LocationForm()
     if form.validate_on_submit():
-        session['locaion'] = form.city.data+", "+form.state.data
+        session['location'] = form.city.data+", "+form.state.data
         return redirect('/start')
     return render_template('location.html', form=form)
 
