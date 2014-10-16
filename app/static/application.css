@@ -1,12 +1,12 @@
-body {background-image: radial-gradient(circle farthest-side at right bottom, #FFFFFF 0%, #0064A4 100%);}
+.container {background-image: radial-gradient(circle farthest-side at right bottom, #FFFFFF 0%, #0064A4 100%); height: 100vh; width: 100vw;}
 .text-white { color: white;}
 
 .question_box {background-color: white; height: 30em; margin-top: 2em;}
 .job_box {height: 28em;}
 .blue_shadow {box-shadow: 1em 1em 0px #46697f;}
 .swipe_bar {position: fixed; width: 100% ; top: 25em;}
-.swipe_circle {opacity: 0.7; background-color: black; height:8em; width: 8em; text-align: center}
-.swipe_text {color: white ;width: 90%;}
+.swipe_circle {opacity: 0.7; background-color: black; height:8.5em; width: 8.5em; text-align: center}
+.swipe_text {color: white ; }
 
 .job_holder  {background-color: white;}
 

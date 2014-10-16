@@ -3,7 +3,7 @@
 
 <div class="row">	
 	<div class="col-xs-12">
-		<h3 class="text-white">Let's answer some quick questions about jobs you might consider.</h3>
+		<h3 class="text-white text-center">Let's answer some quick questions about jobs you might consider.</h3>
 	</div>
 </div>
 
@@ -20,13 +20,13 @@
 		<div class="col-xs-4">
 			<div class="swipe_circle img-circle center-block">
 				<img src="{{ url_for('static', filename='leftswipe.png') }}">
-				<div class="swipe_text center-block">Swipe or tap left for NO</div>
+				<div class="swipe_text center-block">Swipe left or tap here for NO</div>
 			</div>
 		</div>
 		<div class="col-xs-4 col-xs-offset-4">
 			<div class="swipe_circle img-circle center-block" onClick='location.href="{{ url_for('question_view', swipe=2) }}"'>
 				<img src="{{ url_for('static', filename='rightswipe.png') }}">
-			    <div class="swipe_text center-block">Swipe or tap right for YES</div>
+			    <div class="swipe_text center-block">Swipe right or tap here for YES</div>
 		    </div>
 	    </div>
     </div>
