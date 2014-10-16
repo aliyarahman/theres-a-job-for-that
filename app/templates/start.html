@@ -18,15 +18,15 @@
 <div class="row swipe_bar">
 	<div>
 		<div class="col-xs-4">
-			<div class="swipe_circle img-circle center-block">
-				<img src="{{ url_for('static', filename='leftswipe.png') }}">
-				<div class="swipe_text center-block">Swipe left or tap here for NO</div>
+			<div class="swipe_circle img-circle center-block" onClick='location.href="{{ url_for('start', swipe=0) }}"'>
+				<!-- <img src="{{ url_for('static', filename='leftswipe.png') }}"> -->
+				<div class="swipe_text center-block"><br><h1>No</h1></div>
 			</div>
 		</div>
 		<div class="col-xs-4 col-xs-offset-4">
 			<div class="swipe_circle img-circle center-block" onClick='location.href="{{ url_for('question_view', swipe=2) }}"'>
-				<img src="{{ url_for('static', filename='rightswipe.png') }}">
-			    <div class="swipe_text center-block">Swipe right or tap here for YES</div>
+				<!-- <img src="{{ url_for('static', filename='rightswipe.png') }}"> -->
+			    <div class="swipe_text center-block"><br><h1>Yes</h1></div>
 		    </div>
 	    </div>
     </div>

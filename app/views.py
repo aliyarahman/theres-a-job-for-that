@@ -76,12 +76,17 @@ def myjobs():
     jobs_obj = obj['rs']['r']
     jobs=[]
     for j in jobs_obj:
+        description = j['e'][0:-1]
+        for i in [['01','January'],['02','February'],['03','March'],['04','April'],['05','May'],['06','June'],['07','July'],['08','August'],['09','September'],['10','October'],['11','November'],['12','December']]:
+            if j['dp'][5:7] == i[0]:
+                month = i[1]
+        date_string = month+" "+j['dp'][8:10]+", "+j['dp'][0:4]
         jobs.append({'title':j['jt'],
             'company_url':j['cn'],
             'posting_url':j['src']['@url'],
             'posting_source':j['src']['#text'],
             'location':j['loc']['#text'],
-            'date_posted':j['dp'],
-            'description':j['e']})
+            'date_posted': date_string,
+            'description':description})
     job_count = len(jobs)
     return render_template('myjobs.html', jobs=jobs, job_count=job_count)
