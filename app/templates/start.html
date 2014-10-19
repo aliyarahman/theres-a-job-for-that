@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends 'category_base.html' %}
 {% block content %}
 
 <div class="row">	
@@ -7,44 +7,37 @@
 	</div>
 </div>
 
-<div class="question_box job_box blue_shadow col-xs-10 col-xs-offset-1">
+<div class="question_box job_box purple_shadow col-xs-10 col-xs-offset-1">
 	<div class="row">
 			<div class="col-xs-12 text-center">
-				<br><h1>Are you open to jobs in retail sales?</h1>
+				<br><h1>Are you open to {{category}} jobs?</h1>
 			</div>
 	</div>
 </div>
 
 <div class="row swipe_bar">
 	<div>
-		<div class="col-xs-4">
-			<div class="swipe_circle img-circle center-block" onClick='location.href="{{ url_for('start', swipe=0) }}"'>
-				<!-- <img src="{{ url_for('static', filename='leftswipe.png') }}"> -->
-				<div class="swipe_text center-block"><br><h1>No</h1></div>
+		<div class="col-xs-6 text-left">
+			<div class="swipe_circle img-circle" onClick='location.href="{{ url_for('start', category = "pass") }}"'>
+					<div class="swipe_text"><br><h1>No</h1></div>
 			</div>
 		</div>
-		<div class="col-xs-4 col-xs-offset-4">
-			<div class="swipe_circle img-circle center-block" onClick='location.href="{{ url_for('question_view', swipe=2) }}"'>
-				<!-- <img src="{{ url_for('static', filename='rightswipe.png') }}"> -->
-			    <div class="swipe_text center-block"><br><h1>Yes</h1></div>
-		    </div>
-	    </div>
+		<div class="col-xs-6 text-right">
+			<div class="swipe_circle img-circle" onClick='location.href="{{ url_for('start', category=category) }}"'>
+				    <div class="swipe_text"><br><h1>Yes</h1></div>
+			</div>
+		</div>
     </div>
 </div>
 
-<script>
+<script type="text/javascript">
 
-$(function(){
-  function swipeleftHandler( event ){
-    window.location.replace("{{ url_for('start') }}"); }
 
-  function swiperightHandler( event ){
-    window.location.replace("{{ url_for('question_view', swipe=2) }}"); }
+     $('.swipe_bar').click(function(){
 
-  $( "div.question_box" ).on( "swipeleft", swipeleftHandler );
-  $( "div.question_box" ).on( "swiperight", swiperightHandler );
+       $('.swipe_bar').fadeOut();
 
-});
+     });
 
 </script>
 

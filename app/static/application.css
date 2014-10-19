@@ -3,7 +3,8 @@
 .text-white { color: white;}
 .blue_bg {background-image: radial-gradient(circle farthest-side at right bottom, #FFFFFF 0%, #0064A4 100%)}
 .purple_bg {background-color:#611ec6;}
-.yellow_bg {background-color:#f6dc5c;}
+.orange_bg {background-color:#FD8602;}
+.green_bg {background-color: #74C004;}
 
 
 .question_box {background-color: white; height: 30em; margin-top: 2em;}
@@ -11,8 +12,12 @@
 .blue_shadow {box-shadow: 1em 1em 0px #46697f;}
 .purple_shadow {box-shadow: 1em 1em 0px #4A297C;}
 .yellow_shadow {box-shadow: 0.5em 0.5em 0px #dec864;}
+.orange_shadow {box-shadow: 10px 15px 0px #985C1B;}
+.green_shadow {box-shadow: 10px 15px 0px #53791C;}
 .swipe_bar {position: fixed; width: 100% ; top: 25em;}
-.swipe_circle {opacity: 0.7; background-color: black; height:8.5em; width: 8.5em; text-align: center}
+.swipe_circle {display: inline-block; opacity: 0.7; background-color: black; height:8.5em; width: 8.5em; text-align: center}
 .swipe_text {color: white ; }
+.swipe_circle:hover {opacity: 1;}
+
 
 .ui-loader.ui-corner-all.ui-body-a.ui-loader-default {display:none;}

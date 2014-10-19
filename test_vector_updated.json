@@ -1,0 +1,55 @@
+[ {  "keyword": "warehouse worker",
+     "location": "Washington, DC",
+     "context": null
+  },
+  {  "keyword": "warehouse worker",
+     "location": "Washington, DC",
+     "context": [{"question":"Can you do warehouse tasks like unloading trucks?","answer": 0}]
+  },
+  {  "keyword": "warehouse worker",
+     "location": "Washington, DC",
+     "context": [{"question":"Can you do warehouse tasks like unloading trucks?","answer": 0},
+                 {"question":"Do you have a high school diploma or GED?","answer": 1}]
+  },
+  {  "keyword": "warehouse worker",
+     "location": "Washington, DC",
+     "context": [{"question":"Can you do warehouse tasks like unloading trucks?","answer": 0},
+                 {"question":"Do you have a high school diploma or GED?","answer": 1},
+                 {"question":"Can you stand for long periods of time, and lift up to 50 pounds?","answer": 0}]
+  },
+  {  "keyword": "warehouse worker",
+     "location": "Washington, DC",
+     "context": [{"question":"Can you do warehouse tasks like unloading trucks?","answer": 0},
+                 {"question":"Do you have a high school diploma or GED?","answer": 1},
+                 {"question":"Can you stand for long periods of time, and lift up to 50 pounds?","answer": 0},
+                 {"question":"Do you have a driver's license and a safe driving record?","answer": 1}]
+  },
+  {  "keyword": "caregiver",
+     "location": "Washington, DC",
+     "context": null
+  },
+  {  "keyword": "data entry",
+     "location": "Washington, DC",
+     "context": null
+  },
+  {  "keyword": "retail sales",
+     "location": "Washington, DC",
+     "context": null
+  },
+  {  "keyword": "retail sales",
+     "location": "Washington, DC",
+     "context": [{"question":"Can you use devices like scanners?","answer": 0}]
+  },
+  {  "keyword": "retail sales",
+     "location": "Washington, DC",
+     "context": [{"question":"Can you use devices like scanners?","answer": 0}, 
+                 {"question":"Can you work with a team to serve customers well?","answer":1}]
+  },
+  {  "keyword": "retail sales",
+     "location": "Washington, DC",
+     "context": [{"question":"Can you use devices like scanners?","answer": 0}, 
+                 {"question":"Can you work with a team to serve customers well?","answer":1},
+		 {"question": "Can you do maintenance tasks like setting up displays and cleaning the store?","answer":1}]
+  }
+
+]
