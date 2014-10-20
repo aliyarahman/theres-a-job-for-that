@@ -46,12 +46,9 @@ def location():
 
 @app.route('/start/<category>')
 def start(category):
-    if category != 'pass':
-        session['job_categories'].append(category)
-    session['search_strings'].remove(session['this_job'])
-    if len(session['search_strings'])>0:
-        session['this_job'] = session['search_strings'][0]
-        return render_template('start.html', category = session['this_job'])
+    if category == 'pass' and len(session['search_strings']) > 1:
+        session['search_strings'].remove(session['search_strings'][0])
+        return render_template('start.html', category = session['search_strings'][0])
     else:
         return redirect(url_for('question_view',swipe=2))
 
@@ -59,13 +56,13 @@ def start(category):
 @app.route('/question_view/<swipe>')
 def question_view(swipe):
     if swipe=='2':
-        q = { "keyword": session['job_categories'][0], "location": session['location'], "context":session['context']}
+        q = { "keyword": session['search_strings'][0], "location": session['location'], "context":session['context']}
         r = api_call(q)
         session['question']=r['question']
         return render_template('question.html', question=session['question'])
     else:
         session['context'].append({"question":session['question'], "answer":int(swipe)})
-        q = { "keyword": session['job_categories'][0], "location": session['location'], "context":session['context']}
+        q = { "keyword": session['search_strings'][0], "location": session['location'], "context":session['context']}
         r = api_call(q)
         if 'jobs' not in r.keys():
             session['question']=r['question']
@@ -80,11 +77,7 @@ def question_view(swipe):
                         month = i[1]
                 date_string = month+" "+j['dp'][8:10]+", "+j['dp'][0:4]
                 session['all_jobs'].append({'title':j['jt'],'company_url':j['cn'],'posting_url':j['src']['@url'],'posting_source':j['src']['#text'],'location':j['loc']['#text'],'date_posted': date_string,'description':description})
-            session['job_categories'].remove(session['job_categories'][0])
-            if len(session['job_categories'])==0:
-                return redirect(url_for('myjobs'))
-            else:
-                return redirect(url_for('question_view',swipe=2))
+            return redirect(url_for('myjobs'))
 
 
 @app.route('/myjobs')
